@@ -15,6 +15,14 @@ background-color: #f2f4f6;
 color: #00214d;
 }
 
+a {
+	color: #994ff3;
+}
+
+a:hover {
+	color: #00ebc7;
+}
+
 .container {
 	width: 90%;
 	margin: 0 auto;
@@ -73,15 +81,18 @@ footer {
 	min-height: 200px;
 }
 
+footer li {
+	display: inline;
+	padding: 0 1rem;
+}
+
 #about {
-	width: 60%;
+	width: 55%;
 	display: inline-block;
 	line-height: 2em;
-	padding: 0 120px 0 0;
-	vertical-align: top;
 	text-align: left;
 	margin: 36px 0;
-
+	float: left;
 }
 
 #contact {
@@ -89,8 +100,7 @@ footer {
 	display: inline-block;
 	line-height: 2em;
 	font-weight: 700;
-	vertical-align: top;
-	text-align: left;
+	text-align: right;
 	margin: 36px 0px;
 	float: right;
 }
@@ -258,6 +268,25 @@ footer {
 
 
 @media only screen and (max-width: 660px) {
+footer li {
+	display: block;
+	text-align: center;
+	padding: 0 1rem;
+}
+#contact {
+	width: 90%;
+	margin: 1rem auto;
+	display: block;
+	float: none;
+}
+#about {
+	width: 90%;
+	margin: 2rem auto;
+	display: block;
+	float: none;
+	text-align: center;
+	padding: 0;
+}
 .color-card {
 	width: 90%;
 }
