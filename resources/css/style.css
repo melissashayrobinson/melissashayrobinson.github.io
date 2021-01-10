@@ -3,6 +3,9 @@
 
 /* HEAVILY influenced by http://www.happyhues.com */
 
+html {
+	font-size: 16px;
+}
 
 body {
 font-family: proxima-soft, sans-serif;
@@ -18,27 +21,26 @@ color: #00214d;
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 4rem;
 	font-weight: 700;
-	margin: 0 0 .4em 0;
+	margin: 3rem 0 .75em 0;
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	font-weight: 700;
-	text-transform: uppercase;
-	margin: 0 0 .4em 0;
+	margin: 1rem 0 1em 0;
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: 700;
 	margin: 0 0 .4em 0;
 
 }
 
 p {
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 section {
@@ -52,8 +54,19 @@ section {
 	display: inline-block;
 	padding: 8px 16px;
 	border-radius: 5px;
-	margin: 3px 2px;
+	margin: 4px 2px;
 	font-size: 1em;
+	font-weight: 700;
+}
+
+.box {
+	display: inline-block;
+	padding: 8px 16px;
+	border-radius: 0px;
+	margin: 4px 2px;
+	font-size: 1em;
+	font-weight: 700;
+	border: 6px solid #00214d;
 }
 
 footer {
@@ -118,8 +131,24 @@ footer {
 
 
 /* Color Section */
+
+.color-stack {
+	display: block;
+	width: 90%;
+	margin: 3rem auto 3rem auto;
+}
+
+.color-circle {
+	width: 2rem;
+	height: 2rem;
+	border: 6px solid #00214d;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 6px;
+}
+
 .color-card {
-	width: 300px;
+	width: 30%;
 	border: 6px solid #00214d;
 	margin: 10px 8px;
 	padding: 20px;
@@ -157,7 +186,7 @@ footer {
 	padding: 8px 16px;
 	background-color: #f2f4f6;
 	border-radius: 5px;
-	margin: 3px 2px;
+	margin: 4px 2px;
 	font-family: monospace;
 	font-size: 1em;
 }
@@ -176,7 +205,6 @@ footer {
 .font-face {
 	font-size: 1.75em;
 	display: block;
-	text-transform: uppercase;
 	stroke-linecap: round;
 	padding: 0px 0;
 	margin-bottom: 12px;
@@ -187,7 +215,17 @@ footer {
 	padding: 8px 16px;
 	background-color: #fde24f;
 	border-radius: 5px;
-	margin: 3px 2px;
+	margin: 4px 2px;
+	font-size: 1em;
+}
+
+.font-css {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #f2f4f6;
+	border-radius: 5px;
+	margin: 4px 2px;
+	font-family: monospace;
 	font-size: 1em;
 }
 
@@ -213,7 +251,23 @@ footer {
 
 .sample-text {
 	border-top: 2px solid #00214d;
-	margin: 18px 0 0 0;
-	font-size: 1.25em;
+	margin: 12px 0 0 0;
+	font-size: 1em;
 	padding-top: 12px;
+}
+
+
+@media only screen and (max-width: 660px) {
+.color-card {
+	width: 90%;
+}
+.font-card {
+	width: 90%;
+}
+}
+
+@media only screen and (min-width: 660px) and (max-width: 1156px) {
+.color-card {
+	width: 45%;
+}
 }
